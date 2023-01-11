@@ -11,7 +11,6 @@ REQUIRED SECTIONS:
 - About the Project
   - Built With
   - Live Demo
-- Getting Started
 - Authors
 - Future Features
 - Contributing
@@ -41,14 +40,14 @@ After you're finished please remove all the comments and instructions!
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
+    <!-- - [Key Features](#key-features)-->
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
-  - [Install](#install)
+  <!-- - [Install](#install)-->
   - [Usage](#usage)
-  - [Run tests](#run-tests)
+  <!-- - [Run tests](#run-tests)-->
   - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
@@ -60,58 +59,49 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 portfolio website <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
-
-**[your_project__name]** is a...
+**portfolio website** is a css and html project to help understand HTML and CSS in a project based way.
 
 ## 🛠 Built With <a name="built-with"></a>
 
+- Major languages HTML and CSS
+- Frameworks -none
+- Technologies used -Linters
+ 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
+
 
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="#">HTML</a></li>
   </ul>
 </details>
 
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
+    <li><a href="#">None</a></li>
   </ul>
 </details>
 
 <details>
 <summary>Database</summary>
   <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+    <li><a href="#">None</a></li>
   </ul>
 </details>
 
 <!-- Features -->
 
-### Key Features <a name="key-features"></a>
-
-> Describe between 1-3 key features of the application.
-
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [comming soon](https://yourdeployedapplicationlink.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -119,9 +109,22 @@ After you're finished please remove all the comments and instructions!
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
+
+   1.install git, if you already have git installed skip this step.
+ 
+   2.open command terminal
+ 
+   3.navigate to the directory you want remote directory to be cloned to
+ 
+   4.go to the git hub and copy HTTPS url of the repository
+ 
+   5.clone the repository by typing git clone "HTTPS url copied in step4"
+ 
+   6.Hit enter in the keyboard
+ 
+   7.navigate to the copy of your cloned repository using cd command
 
 ### Prerequisites
 
@@ -134,8 +137,11 @@ Example command:
  gem install rails
 ```
  -->
+- Basic knowdlenge of HTML, CSS and the code editor of your choice.
+- Basic knowlege of the computer operating system.
 
-### Setup
+
+### Setup <a name="setup"></a>
 
 Clone this repository to your desired folder:
 
@@ -148,22 +154,9 @@ Example commands:
 ```
 --->
 
-### Install
+### Usage <a name="usage"></a>
 
-Install this project with:
-
-<!--
-Example command:
-
-```sh
-  cd my-project
-  gem install
-```
---->
-
-### Usage
-
-To run the project, execute the following command:
+To run the project, execute the following command: go to your local repository and double click index.html file to open in a bowser. 
 
 <!--
 Example command:
@@ -173,21 +166,10 @@ Example command:
 ```
 --->
 
-### Run tests
 
-To run tests, run the following command:
+### Deployment <a name="triangular_flag_on_post-deployment"></a>
 
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
-
-### Deployment
-
-You can deploy this project using:
+You can deploy this project using: github pages or any host of your choice
 
 <!--
 Example:
@@ -203,19 +185,13 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
 
-👤 **Author1**
+👤 **Lengushuru Charles**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/lengushuru)
+- Twitter: [@twitterhandle](https://twitter.com/ngushuru)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/lengushuru-charles-a09371111/)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -223,11 +199,10 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **responsive for all devices**
+- [ ] **mobile menu**
+- [ ] **form validation**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -247,7 +222,7 @@ Feel free to check the [issues page](../../issues/).
 
 > Write a message to encourage readers to support your project
 
-If you like this project...
+If you like this project please give it a ⭐️.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -255,9 +230,9 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
 
-I would like to thank...
+
+I would like to thank microverse for the oportunity to learn how to set up this project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -265,15 +240,15 @@ I would like to thank...
 
 ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 
-> Add at least 2 questions new developers would ask when they decide to use your project.
 
-- **[Question_1]**
+- **how will i setup this project in local machine**
 
-  - [Answer_1]
+  - run the following command in the terminal: git clone https://github.com/lengushuru/Hello-Microverse.git
 
-- **[Question_2]**
 
-  - [Answer_2]
+- **which code editor should i use**
+
+  - You can use any editor of your choice but i recommend vs code.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -283,6 +258,5 @@ I would like to thank...
 
 This project is [MIT](./LICENSE) licensed.
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

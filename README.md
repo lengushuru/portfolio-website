@@ -243,7 +243,7 @@ I would like to thank microverse for the oportunity to learn how to set up this 
 
 - **how will i setup this project in local machine**
 
-  - run the following command in the terminal: git clone https://github.com/lengushuru/Hello-Microverse.git
+  - run the following command in the terminal: git clone https://github.com/lengushuru/portfolio-website.git
 
 
 - **which code editor should i use**

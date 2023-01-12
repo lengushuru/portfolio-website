@@ -53,7 +53,7 @@ main {
   top: 0;
   left: 0;
   z-index: 100;
-  background: #3C3A39;
+  background: #3c3a39;
 }
 
 .page--logo {
@@ -146,7 +146,7 @@ main {
   align-items: flex-start;
   padding: 120px 24px;
   gap: 12px;
-  background: #1C1A19;
+  background: #1c1a19;
   background-image: url('./images/mobile_home_bg.png');
   background-repeat: no-repeat;
   background-position: 100% 115%;
@@ -160,7 +160,7 @@ main {
   font-size: 56px;
   line-height: 64px;
   letter-spacing: 0.37px;
-  color: #FF6B00;
+  color: #ff6b00;
 }
 
 .abt_hero {
@@ -172,7 +172,7 @@ main {
   line-height: 32px;
   display: flex;
   align-items: center;
-  color: #FFF5E1;
+  color: #fff5e1;
 }
 
 .description_text {
@@ -182,7 +182,7 @@ main {
   font-weight: 400;
   font-size: 17px;
   line-height: 24px;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .socia_icons {

@@ -224,6 +224,12 @@ main {
   border: 1px solid #212121;
 }
 
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+}
+
 .work1 {
   display: flex;
   flex-direction: column;

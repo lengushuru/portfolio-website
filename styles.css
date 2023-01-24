@@ -325,10 +325,6 @@ main {
 }
 
 .work1 a:focus {
-  background: #E05304;;
-}
-
-.work1 a:focus {
   background: #e05304;
   color: #f4f1f0;
 }

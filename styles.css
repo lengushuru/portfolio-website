@@ -12,7 +12,7 @@ html {
 body {
   background: #f7f7f9;
   width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -154,6 +154,12 @@ main {
   background-position: 100% 115%;
 }
 
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 .main_title {
   height: 124px;
   font-family: var(--cret);
@@ -194,6 +200,10 @@ main {
   gap: 21px;
 }
 
+.socia_icons-destop {
+  display: none;
+}
+
 /* -----------------------------------works section mobile---------------------------------------------- */
 .portfolio {
   display: flex;
@@ -228,19 +238,29 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 1fr);
+  margin-left: 6vw;
 }
 
 .work1 {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  align-items: center;
   padding: 0 24px;
 }
 
 .background {
-  height: 237px;
+  width: 90vw;
+  height: 300px;
   background-image: url("./images/portfolio1.png");
   background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.work1-text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .work-subtitle {
@@ -269,6 +289,8 @@ main {
 .lang-list {
   display: flex;
   gap: 12px;
+  margin-bottom: 24px;
+  margin-top: 24px;
 }
 
 .lang-list li {
@@ -311,15 +333,14 @@ main {
   flex-direction: column;
   gap: 12px;
   color: #fff;
+  position: relative;
   margin-top: 24px;
   padding-top: 84px;
   background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(./images/portfolio4.png);
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: 100% 100%;
-  width: 90vw;
-  margin-left: auto;
-  margin-right: auto;
+  background-size: 100% 100%;
+  background-position: 100%;
+  width: 92vw;
 }
 
 .card-subtitle2 {
@@ -387,27 +408,32 @@ main {
 .about-me {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  padding: 120px 24px;
+  padding: 110px 24px;
   background: #1c1a19;
   background-image: url("./images/mobile_abt_bg.png");
   background-repeat: no-repeat;
-  background-position: 100% 25%;
+  background-position: 100% 22%;
+}
+
+.abt-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .abt-title2 {
-  height: 79px;
+  /* height: 79px; */
   font-family: var(--cret);
   font-style: normal;
   font-weight: 400;
-  font-size: 72px;
-  line-height: 88px;
+  font-size: 62px;
+
+  /* line-height: 88px; */
   letter-spacing: 0.37px;
   color: #ff6b00;
 }
 
 .abt-text2 {
-  height: 148px;
   font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -421,11 +447,16 @@ main {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 12px;
   gap: 10px;
   width: 161px;
   height: 48px;
   background: #ff6b00;
+}
+
+.resume:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
 }
 
 .resume-a {
@@ -440,6 +471,10 @@ main {
   text-align: center;
   letter-spacing: 0.03em;
   color: #fff;
+}
+
+.resume:hover .resume-a {
+  color: #f55800;
 }
 
 .underline {
@@ -547,6 +582,10 @@ main {
   color: #979493;
 }
 
+.separate_name {
+  display: none;
+}
+
 .textarea {
   background: #fbf8f7;
   height: 114px;
@@ -565,7 +604,6 @@ main {
   align-items: center;
   justify-content: center;
   padding: 12px;
-  gap: 10px;
   width: 131px;
   height: 48px;
   background: #ff6b00;
@@ -592,9 +630,643 @@ main {
 footer {
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 81px;
   background-color: #fff !important;
   border-top: 1px solid #dfe1e6;
   width: 100vw;
-  padding: 25px;
+}
+
+/* ----------------------------------------------------------------tablets view ---------------------------------------------------------------- */
+@media (min-width: 768px) {
+  .card {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .nav-bar {
+    width: 100vw;
+    height: 72px;
+    align-items: center;
+    justify-content: space-between;
+    background: #3e3c3c;
+  }
+
+  .nav--menu {
+    display: none;
+  }
+
+  .desk-top {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    color: #fff;
+    margin-right: 154px;
+  }
+
+  .desk-top a {
+    height: 20px;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+  }
+
+  .desk-top img {
+    width: 22px;
+    height: 18px;
+  }
+
+  .page--logo {
+    margin-left: 154px;
+  }
+
+  .page--logo a {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #fff;
+  }
+
+  /* .............................................................desktop home page..................................................... */
+  .hero {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 6vw;
+    width: 100%;
+    height: calc(100vh - 241px);
+    justify-items: flex-start;
+    background-image: url('./images/Illustration-header@2x.png');
+    background-position: 100% 0%;
+    background-size: 450px;
+  }
+
+  .hero-text {
+    width: 566px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .main_title {
+    height: 160px;
+    font-size: 72px;
+    line-height: 82px;
+    color: #f55800;
+  }
+
+  .abt_hero {
+    height: 24px;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .description_text {
+    height: 123px;
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+    color: #f4f5f7;
+  }
+
+  .socia_icons {
+    display: none;
+    flex-direction: column;
+    margin-left: 36px;
+  }
+
+  .socia_icons-destop {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-left: 36px;
+  }
+
+  /* --------------------------------------------------------works section------------------------------------------------------------------------ */
+  .work-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+    color: #091e42;
+  }
+
+  .work-title div {
+    width: 55vw;
+  }
+
+  .work-title h2 {
+    font-family: var(--cret);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    display: flex;
+    align-items: center;
+    color: #091e42;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+  }
+
+  .work1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+    margin-top: 24px;
+  }
+
+  .background {
+    width: 48vw;
+    height: 448px;
+    background-size: 100% 100%;
+  }
+
+  .work1-text {
+    width: 33vw;
+  }
+
+  .works-desk {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #091e42;
+    height: auto;
+    margin-top: 12px;
+  }
+
+  .other-works {
+    width: 43vw;
+    height: auto;
+    border: 1px solid rgb(247, 247, 247);
+  }
+
+  .other-works:hover {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 1px solid #212121;
+  }
+
+  .other-works .prj-link {
+    display: none;
+  }
+
+  .other-works:hover .prj-link {
+    display: flex;
+    cursor: pointer;
+  }
+
+  .other-works:hover .card-subtitle2 {
+    display: none;
+    cursor: pointer;
+  }
+
+  .other-works:hover .card-text2 {
+    display: none;
+  }
+
+  .other-works:hover .lang-list2 {
+    display: none;
+  }
+
+  .about-me {
+    width: 79vw;
+    background-image: url('./images/illustration-about\ me-desktope.svg');
+    background-position: 100% 25%;
+    padding: 130px 10vw;
+    background-size: 40%;
+  }
+
+  .abt-title2 {
+    font-family: var(--cret);
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.37px;
+    color: #ff6b00;
+  }
+
+  .abt-text2 {
+    font-size: 20px;
+    line-height: 32px;
+    color: #f4f5f7;
+  }
+
+  .abt-text-container {
+    width: 39vw;
+  }
+
+  .underline {
+    margin-top: 139px;
+    margin-bottom: 146px;
+  }
+
+  .stack {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .lang-stack {
+    align-items: flex-start;
+    height: 320px;
+  }
+
+  .stack-list {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .contact {
+    flex-direction: row;
+    padding: 130px 135px;
+  }
+
+  .form-text {
+    display: flex;
+    height: auto;
+    justify-content: flex-start;
+    font-size: 40px;
+    text-align: left;
+    line-height: 52px;
+    color: #262626;
+  }
+
+  .form-item1 {
+    display: flex;
+    gap: 24px;
+  }
+
+  .form-input {
+    width: 20vw;
+    flex-direction: column;
+    height: 35px;
+  }
+
+  .full_name {
+    display: none;
+  }
+
+  .separate_name {
+    display: flex;
+  }
+
+  .textarea {
+    height: 100px;
+  }
+
+  .form-btn {
+    height: 48px;
+    background: #f55800;
+  }
+
+  .form-btn1 {
+    justify-content: flex-start;
+  }
+
+  .form-width {
+    width: 45vw;
+  }
+
+  footer {
+    height: 71px;
+  }
+
+  .socia_icons1 {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+}
+
+/* -----------------------------------------------section desktop---------------------------------------------- */
+
+@media screen and (min-width: 1077px) {
+  /* ................................desktop header-------------------------------------------------------------- */
+  .nav-bar {
+    width: 100vw;
+    height: 72px;
+    align-items: center;
+    justify-content: space-between;
+    background: #3e3c3c;
+  }
+
+  .nav--menu {
+    display: none;
+  }
+
+  .desk-top {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    color: #fff;
+    margin-right: 154px;
+  }
+
+  .desk-top a {
+    height: 20px;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+  }
+
+  .desk-top img {
+    width: 22px;
+    height: 18px;
+  }
+
+  .page--logo {
+    margin-left: 154px;
+  }
+
+  .page--logo a {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #fff;
+  }
+
+  /* .............................................................desktop home page..................................................... */
+  .hero {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 6vw;
+    width: 100%;
+    height: calc(100vh - 241px);
+    justify-items: flex-start;
+    background-image: url('./images/Illustration-header@2x.png');
+    background-position: 100% 0%;
+    background-size: 450px;
+  }
+
+  .hero-text {
+    width: 566px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .main_title {
+    height: 160px;
+    font-size: 72px;
+    line-height: 82px;
+    color: #f55800;
+  }
+
+  .abt_hero {
+    height: 24px;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .description_text {
+    height: 123px;
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+    color: #f4f5f7;
+  }
+
+  .socia_icons {
+    flex-direction: column;
+    margin-left: 36px;
+  }
+
+  /* --------------------------------------------------------works section------------------------------------------------------------------------ */
+  .work-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+    color: #091e42;
+  }
+
+  .work-title div {
+    width: 55vw;
+  }
+
+  .work-title h2 {
+    font-family: var(--cret);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    display: flex;
+    align-items: center;
+    color: #091e42;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+  }
+
+  .work1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+    margin-top: 24px;
+  }
+
+  .background {
+    width: 48vw;
+    height: 448px;
+    background-size: 100% 100%;
+  }
+
+  .work1-text {
+    width: 33vw;
+  }
+
+  .works-desk {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #091e42;
+    height: auto;
+    margin-top: 12px;
+  }
+
+  .card {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 24px;
+  }
+
+  .other-works {
+    width: 28vw;
+    height: auto;
+    border: 1px solid rgb(247, 247, 247);
+  }
+
+  .other-works:hover {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 1px solid #212121;
+  }
+
+  .other-works .prj-link {
+    display: none;
+  }
+
+  .other-works:hover .prj-link {
+    display: flex;
+    cursor: pointer;
+  }
+
+  .other-works:hover .card-subtitle2 {
+    display: none;
+    cursor: pointer;
+  }
+
+  .other-works:hover .card-text2 {
+    display: none;
+  }
+
+  .other-works:hover .lang-list2 {
+    display: none;
+  }
+
+  .about-me {
+    width: 79vw;
+    background-image: url('./images/illustration-about\ me-desktope.svg');
+    background-position: 100% 18%;
+    background-size: 35%;
+    padding: 130px 10vw;
+  }
+
+  .abt-title2 {
+    font-family: var(--cret);
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.37px;
+    color: #ff6b00;
+  }
+
+  .abt-text2 {
+    font-size: 20px;
+    line-height: 32px;
+    color: #f4f5f7;
+  }
+
+  .abt-text-container {
+    width: 39vw;
+  }
+
+  .underline {
+    margin-top: 139px;
+    margin-bottom: 146px;
+  }
+
+  .stack {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .lang-stack {
+    align-items: flex-start;
+    height: 320px;
+  }
+
+  .stack-list {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .contact {
+    flex-direction: row;
+    padding: 130px 135px;
+  }
+
+  .form-text {
+    display: flex;
+    height: auto;
+    justify-content: flex-start;
+    font-size: 40px;
+    text-align: left;
+    line-height: 52px;
+    color: #262626;
+  }
+
+  .form-item1 {
+    display: flex;
+    gap: 24px;
+  }
+
+  .form-input {
+    width: 20vw;
+    flex-direction: column;
+    height: 35px;
+  }
+
+  .full_name {
+    display: none;
+  }
+
+  .separate_name {
+    display: flex;
+  }
+
+  .textarea {
+    height: 100px;
+  }
+
+  .form-btn {
+    height: 48px;
+    background: #f55800;
+  }
+
+  .form-btn1 {
+    justify-content: flex-start;
+  }
+
+  .form-width {
+    width: 45vw;
+  }
+
+  footer {
+    height: 71px;
+  }
+
+  .socia_icons1 {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
 }

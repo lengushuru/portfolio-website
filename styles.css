@@ -704,8 +704,8 @@ footer {
     height: calc(100vh - 241px);
     justify-items: flex-start;
     background-image: url('./images/Illustration-header@2x.png');
-    background-position: 100% 0%;
-    background-size: 450px;
+    background-position: 100% 15%;
+    background-size: 320px;
   }
 
   .hero-text {

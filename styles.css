@@ -315,6 +315,7 @@ main {
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
+  border: 1px solid #ff6b00;
 }
 
 .work1 a:hover {

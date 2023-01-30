@@ -653,6 +653,10 @@ footer {
     gap: 24px;
   }
 
+  .nav-menu {
+    display: none;
+  }
+
   .nav-bar {
     width: 100vw;
     height: 72px;
@@ -975,6 +979,10 @@ footer {
     align-items: center;
     justify-content: space-between;
     background: #3e3c3c;
+  }
+
+  .nav-menu {
+    display: none;
   }
 
   .nav--menu {

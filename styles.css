@@ -111,7 +111,7 @@ main {
   width: 100%;
   top: 0;
   left: -100%;
-  background-color: #3C3A39;
+  background-color: #3c3a39;
   padding-top: 34px;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -139,11 +139,12 @@ main {
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
+
   /* line-height: 44px; */
   display: flex;
   align-items: center;
   color: #fff5e1;
-  border-bottom: 1px solid #6F6C6B;
+  border-bottom: 1px solid #6f6c6b;
   width: 87vw;
   margin-top: 10px;
 }

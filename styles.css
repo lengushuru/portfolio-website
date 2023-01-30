@@ -111,8 +111,8 @@ main {
   width: 100%;
   top: 0;
   left: -100%;
-  background-color: rgba(30, 78, 255, 0.6);
-  backdrop-filter: blur(8px);
+  background-color: #3C3A39;
+  padding-top: 34px;
   overflow-x: hidden;
   overflow-y: hidden;
   display: flex;
@@ -134,12 +134,18 @@ main {
 }
 
 .nav-item {
-  margin-bottom: 40px;
+  height: 54px;
+  font-family: Inter, sans-serif;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 32px;
-  line-height: 44px;
-  color: #fff;
+  /* line-height: 44px; */
+  display: flex;
+  align-items: center;
+  color: #fff5e1;
+  border-bottom: 1px solid #6F6C6B;
+  width: 87vw;
+  margin-top: 10px;
 }
 
 .hero {

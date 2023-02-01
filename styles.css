@@ -133,6 +133,10 @@ main {
   left: 0;
 }
 
+.hide {
+  display: none !important;
+}
+
 .nav-item {
   height: 54px;
   font-family: Inter, sans-serif;
@@ -212,6 +216,142 @@ main {
 }
 
 /* -----------------------------------works section mobile---------------------------------------------- */
+#first,
+#second, 
+#third, 
+#fourth, 
+#fifth, 
+#sixth
+ {
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #979493;
+  /* mix-blend-mode: multiply; */
+}
+
+.modal_class1,
+.modal_class2,
+.modal_class3,
+.modal_class4,
+.modal_class5,
+.modal_class6 {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 24px;
+  z-index: 1000;
+  background-color: #fefefe;
+  border: 1px solid #888;
+  width: 80%;
+  /* height: 75%; */
+  overflow: hidden;
+  /* padding:; */
+}
+
+.modal-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 82px;
+  /* padding: 0 16px; */
+}
+
+.modal-title {
+  font-family: var(--robo);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.modal-content p {
+font-family: Inter, sans-serif;
+/* padding: 16px; */
+margin-top: 24px;
+margin-bottom: 16px;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #344563;
+}
+
+.list_height {
+  width: 100%;
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+
+.list_height li{
+  display: flex;
+  align-items: center;
+  padding: 10px 10px;
+  background: #fff;
+  border: 1px solid #8993a4;
+}
+
+.modal-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 17px;
+}
+
+.text-btns p {
+  margin: 24px 0;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.prj-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 154px;
+  height: 48px;
+  background: #FF6B00;
+}
+
+.prj-btn a {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+
+.modal-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px;
+}
+
 .portfolio {
   display: flex;
   flex-direction: column;
@@ -1075,6 +1215,82 @@ footer {
   }
 
   /* --------------------------------------------------------works section------------------------------------------------------------------------ */
+  
+  .modal-content {
+    padding: 24px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 75vh;
+    width: 80%;
+  }
+
+  .modal-top {
+    padding: 0;
+  }
+
+  .modal-main {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: flex-start;
+  }
+
+  .modal-top{
+    width: 78vw;
+    margin-top: 0;
+    height: 40px;
+    /* border: 1px solid green; */
+  }
+
+  .modal-img {
+    width: 42vw;
+    height: 365px;
+  }
+
+  .text-btns {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 24px;
+    width: 35vw;
+    height: 365px;
+    
+  }
+
+  .list_height {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+    margin-top: 24px;
+    margin-left: 0;
+  }
+  .list_height li{
+    font-family: var(--popin);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    background: #fff;
+    color: #3C3A39;
+    border: 1px solid #8993a4;
+  }
+
+  .text-btns p {
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .modal-btn {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+  }
+
   .work-title {
     display: flex;
     flex-direction: row;

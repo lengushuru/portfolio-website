@@ -95,7 +95,17 @@ After you're finished please remove all the comments and instructions!
 </details>
 
 <!-- Features -->
+<!-- Features -->
 
+### Key Features <a name="key-features"></a>
+
+> Describe between 1-3 key features of the application.
+
+- **Mobile Menu**
+- **Responve website**
+- **Detailed popup window**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>

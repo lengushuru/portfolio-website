@@ -258,4 +258,50 @@ closePopup6.addEventListener('click', () => {
 );
 
 //code for closing popup window when clicking outside the popup window
+window.addEventListener('click', (e) => {
+  if (e.target === popup1) {
+    popup1.style.display = 'none';
+    // document.querySelector('.modal-content').style.display = 'none';
+  }
+}
+);
 
+window.addEventListener('click', (e) => {
+  if (e.target === popup2) {
+    popup2.style.display = 'none';
+    // document.querySelector('.modal-content').style.display = 'none';
+  }
+}
+);
+
+window.addEventListener('click', (e) => {
+  if (e.target === popup3) {
+    popup3.style.display = 'none';
+    // document.querySelector('.modal-content').style.display = 'none';
+  }
+}
+);
+
+window.addEventListener('click', (e) => {
+  if (e.target === popup4) {
+    popup4.style.display = 'none';
+    document.querySelector('.modal-content').style.display = 'none';
+  }
+}
+);
+
+window.addEventListener('click', (e) => {
+  if (e.target === popup5) {
+    popup5.style.display = 'none';
+    document.querySelector('.modal-content').style.display = 'none';
+  }
+}
+);
+
+window.addEventListener('click', (e) => {
+  if (e.target === popup6) {
+    popup6.style.display = 'none';
+    document.querySelector('modal-content').style.display = 'none';
+  }
+}
+);

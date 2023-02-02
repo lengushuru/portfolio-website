@@ -769,11 +769,6 @@ main {
   color: #f55800;
 }
 
-/* .form-btn :focus {
-  background: #e05304;
-  color: #fff;
-} */
-
 footer {
   display: flex;
   justify-content: center;
@@ -1071,10 +1066,6 @@ footer {
     flex-direction: column;
     height: 35px;
   }
-
-  /* .full_name {
-    display: none;
-  } */
 
   .separate_name {
     display: flex;
@@ -1460,10 +1451,6 @@ footer {
     flex-direction: column;
     height: 35px;
   }
-
-  /* .full_name {
-    display: none;
-  } */
 
   .separate_name {
     display: flex;

@@ -289,3 +289,19 @@ closePopup6.addEventListener('click', () => {
   popup6.style.display = 'none';
   document.querySelector('.modal_class6').style.display = 'none';
 });
+
+const contactForm = document.getElementById('form');
+contactForm.addEventListener('submit', (event) => {
+  const emailInput = document.getElementById('email');
+  const errorMsg = document.querySelector('.error');
+
+  if (emailInput.value !== emailInput.value.toLowerCase()) {
+    event.preventDefault();
+     errorMsg.style.display = 'flex';
+  }
+  else {
+    errorMsg.style.display = 'none';
+    contactForm.submit();
+  }
+});
+

@@ -1072,9 +1072,9 @@ footer {
     height: 35px;
   }
 
-  .full_name {
+  /* .full_name {
     display: none;
-  }
+  } */
 
   .separate_name {
     display: flex;
@@ -1461,9 +1461,9 @@ footer {
     height: 35px;
   }
 
-  .full_name {
+  /* .full_name {
     display: none;
-  }
+  } */
 
   .separate_name {
     display: flex;

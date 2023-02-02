@@ -46,6 +46,13 @@ main {
   width: 100vw;
 }
 
+.error {
+  display: none;
+  align-self: center;
+  margin-right: auto;
+  color: red;
+}
+
 .nav-bar {
   width: 100vw;
   height: 48px;
@@ -762,11 +769,6 @@ main {
   color: #f55800;
 }
 
-.form-btn :focus {
-  background: #e05304;
-  color: #fff;
-}
-
 footer {
   display: flex;
   justify-content: center;
@@ -1063,10 +1065,6 @@ footer {
     width: 20vw;
     flex-direction: column;
     height: 35px;
-  }
-
-  .full_name {
-    display: none;
   }
 
   .separate_name {
@@ -1452,10 +1450,6 @@ footer {
     width: 20vw;
     flex-direction: column;
     height: 35px;
-  }
-
-  .full_name {
-    display: none;
   }
 
   .separate_name {

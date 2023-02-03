@@ -1,6 +1,6 @@
 // code for the mobile menu
 
-const navMenu = document.getElementById('nav-menu');
+const navMenu = document.getElementById('nav-men');
 const toggleMenu = document.getElementById('nav-toggle');
 const closeMenu = document.getElementById('nav-close');
 
@@ -10,7 +10,7 @@ toggleMenu.addEventListener('click', () => {
 
 closeMenu.addEventListener('click', () => navMenu.classList.remove('show'));
 
-const navLinks = document.querySelectorAll('.nav-item');
+onst navLinks = document.querySelectorAll('.nav-item');
 
 navLinks.forEach((n) => n.addEventListener('click', () => navMenu.classList.remove('show')));
 
@@ -67,7 +67,7 @@ const Portfolio = [
     technologies: ['HTML', 'CSS', 'Javasript'],
     seeLive: '#',
     seePeoject: '#',
-  },
+  ,
   {
     id: 'fifth',
     close_popup: 'close-popup5',

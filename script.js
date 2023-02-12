@@ -21,27 +21,30 @@ const Portfolio = [
   {
     id: 'zero',
     modal_class: 'modal_class0',
+    project_img:'./images/university-tech.png',
     close_popup: 'close-popup0',
     title: 'Multi-Post Stories',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
     technologies: ['html', 'bootstrap', 'Ruby on Rails'],
-    seeLive: '#',
-    seePeoject: '#',
+    seeLive: 'https://lengushuru.github.io/samburu-tech-week/',
+    seePeoject: 'https://github.com/lengushuru/samburu-tech-week',
   },
   {
     id: 'first',
     modal_class: 'modal_class1',
+    project_img:'./images/work2.png',
     close_popup: 'close-popup1',
     title: 'Multi-Post Stories',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
     technologies: ['html', 'bootstrap', 'Ruby on Rails'],
-    seeLive: '#',
+    seeLive: 'https://lengushuru.github.io/Lengushuru-portfolio/',
     seePeoject: '#',
   },
   {
     id: 'second',
     modal_class: 'modal_class2',
     close_popup: 'close-popup2',
+    project_img:'./images/university-tech.png',
     title: 'Data Dashboard Healthcare',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
     technologies: ['html', 'bootstrap', 'Ruby'],
@@ -51,6 +54,7 @@ const Portfolio = [
   {
     id: 'third',
     modal_class: 'modal_class3',
+    project_img:'./images/university-tech.png',
     close_popup: 'close-popup3',
     title: 'Website Protfolio',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard some additional text will be added later',
@@ -61,6 +65,7 @@ const Portfolio = [
   {
     id: 'fourth',
     close_popup: 'close-popup4',
+    project_img:'./images/university-tech.png',
     modal_class: 'modal_class4',
     title: 'Profesional Art Printing Data More',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
@@ -71,6 +76,7 @@ const Portfolio = [
   {
     id: 'fifth',
     close_popup: 'close-popup5',
+    project_img:'./images/university-tech.png',
     modal_class: 'modal_class5',
     title: 'Data Dashboard Healthcare',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
@@ -81,6 +87,7 @@ const Portfolio = [
   {
     id: 'sixth',
     close_popup: 'close-popup6',
+    project_img:'./images/university-tech.png',
     modal_class: 'modal_class6',
     title: 'Website Protfolio',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
@@ -171,7 +178,7 @@ Portfolio.forEach((project) => {
       ${stack}
     </ul>
     <div class="modal-main">
-      <img class="modal-img"  src="./images/portfolio1.png" alt="">
+      <img class="modal-img"  src=${project.project_img} alt="">
       <div class="text-btns">
         <p>${project.description}</p>
         <div class="modal-btn">
@@ -181,7 +188,7 @@ Portfolio.forEach((project) => {
               <img src="images/see-live.png" alt="">
             </div>
             <div class="prj-btn">
-              <a  href="./">See Source</a>
+              <a  href=${project.seePeoject}>See Source</a>
               <img src="images/see-source.png" alt="">
             </div>
           </div>

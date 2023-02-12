@@ -311,8 +311,3 @@ contactForm.addEventListener('submit', (event) => {
   }
 });
 
-//q: to merge two git branches
-//git checkout master
-//git merge feature
-//git push origin master
-
